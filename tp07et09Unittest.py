@@ -139,7 +139,7 @@ class FractionTestCase(unittest.TestCase):
         self.assertFalse(self.f2.is_adjacent_to(self.f2 ))
         self.assertFalse(self.f3.is_adjacent_to(self.f4))
         self.assertFalse(self.f4.is_adjacent_to(self.f1))
-        self.assertTrue(self.f_zero.is_adjacent_to(self.f2))
+        self.assertTrue(Fraction(1,2).is_adjacent_to(Fraction(1,3)))
 
 if __name__ == "__main__":
     # Run the tests
